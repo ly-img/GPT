@@ -17,7 +17,7 @@ def hello():
 @app.before_request
 def log_request_info():
     now = datetime.datetime.now()
-    ip_address = request.access_roure[0]
+    ip_address = request.access_route[0]
     user_agent = request.headers.get('User-Agent')
     print(f'访问ip: {ip_address}, 时间:{now}\n设备： {user_agent}')
 
