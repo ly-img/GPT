@@ -4,7 +4,7 @@
 git clone https://github.com/ly-img/GPT.git
 mv GPT/* ./ && mv GPT/.* ./
 ````
-### 再复制下面的命令执行等待完成
+### 3.再复制下面的命令执行等待完成
 ````
 pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null
 ````
