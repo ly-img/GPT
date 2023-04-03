@@ -81,15 +81,15 @@ class AIBot:
         if self.LastMessage_id == '':
             message = context.bot.send_message(
                 chat_id=update.message.chat_id,
-                text="▎\n\n" + result,
+                text="▎ChatGPT3.5\n\n" + result,
                 reply_to_message_id=update.message.message_id,
             )
             if COOKIES and API:
                 self.LastMessage_id = message.message_id
-            self.mess = "▎\n\n" + result
+            self.mess = "▎ChatGPT3.5\n\n" + result
             # print("LastMessage_id", self.LastMessage_id)
         else:
-            context.bot.edit_message_text(chat_id=update.message.chat_id, message_id=self.LastMessage_id, text=self.mess + "\n\n\n▎\n\n" + result)
+            context.bot.edit_message_text(chat_id=update.message.chat_id, message_id=self.LastMessage_id, text=self.mess + "\n\n\n▎ChatGPT3.5\n\n" + result)
             self.LastMessage_id = ''
             self.mess = ''
 
