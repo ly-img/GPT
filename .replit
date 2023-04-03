@@ -1,5 +1,5 @@
 # The command that runs the program. If the interpreter field is set, it will have priority and this run command will do nothing
-run = "pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null && python3 webhook.py"
+run = "python3 webhook.py"
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
@@ -105,4 +105,4 @@ pattern = "**/*.py"
 start = "pylsp"
 
 [deployment]
-run = ["sh", "-c", "pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null && python3 webhook.py"]
+run = ["sh", "-c", "python3 webhook.py"]
