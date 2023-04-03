@@ -14,7 +14,7 @@
 
 ✅ 支持 docker，fly.io 部署
 
-## Replit 远程部署如下  ![replit 手动部署](https://github.com/ly-img/GPT/blob/main/replit手动部署.md)
+## Replit 远程部署如下  [replit 手动部署](https://github.com/ly-img/GPT/blob/main/replit手动部署.md)
 
 [![Run on Repl.it](https://replit.com/badge/github/ly-img/GPT)](https://replit.com/new/github/ly-img/GPT)
 
