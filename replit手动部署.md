@@ -9,4 +9,4 @@ mv GPT/* ./ && mv GPT/.* ./
 pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null
 ````
 ### 4.设置变量 参考https://github.com/ly-img/GPT/blob/main/变量说明.md
-### 5.点 RUN
+### 5.点 RUN   完成
