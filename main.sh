@@ -5,7 +5,6 @@ git clone https://github.com/ly-img/GPT.git
 
 mv GPT/* ./ && mv GPT/.* ./
 
-#pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null && python3 webhook.py
-
+pip install -r requirements.txt --index-url https://pypi.python.org/simple/ > /dev/null
 
       
