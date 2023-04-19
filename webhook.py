@@ -6,14 +6,23 @@ from waitress import serve
 from runasync import run_async
 from flask import Flask, request, jsonify
 from config import BOT_TOKEN, WEB_HOOK, PORT
+from flask import request
+import datetime
 
 app = Flask(__name__)
 application = setup(BOT_TOKEN)
 
 @app.route('/', methods=['GET'])
 def hello():
-    print("", end="")
     return 'Bot has connected!'
+@app.before_request
+def log_request_info():
+    now = datetime.datetime.now()
+    bj_time = now + datetime.timedelta(hours=8)
+    date_str = bj_time.strftime('%Y-%m-%d %H:%M:%S')
+    ip_address = request.access_route[0]
+    user_agent = request.headers.get('User-Agent')
+    print(f'访问ip: {ip_address}, 中国时间:{date_str}\n设备： {user_agent}')
 
 @app.route(rf'/{BOT_TOKEN}'.format(), methods=['POST'])
 async def respond():
