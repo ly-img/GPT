@@ -18,7 +18,7 @@
 
 ## Replit 远程部署
 
-[![Run on Repl.it](https://replit.com/badge/github/yym68686/ChatGPT-Bing-Telegram-Bot)](https://replit.com/new/github/yym68686/ChatGPT-Bing-Telegram-Bot)
+[![Run on Repl.it](https://replit.com/badge/github/ly-img/GPT)](https://replit.com/new/github/ly-img/GPT)
 
 导入 Github 仓库后，设置运行命令
 
