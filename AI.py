@@ -81,15 +81,15 @@ class AIBot:
         if self.LastMessage_id == '':
             message = await context.bot.send_message(
                 chat_id=update.message.chat_id,
-                text=escape("🤖️ ChatGPT3.5\n\n" + result),
+                text=escape("\n\n" + result),
                 parse_mode='MarkdownV2',
                 reply_to_message_id=update.message.message_id,
             )
             if COOKIES and API:
                 self.LastMessage_id = message.message_id
-            self.mess = "🤖️ ChatGPT3.5\n\n" + result
+            self.mess = "\n\n" + result
         else:
-            await context.bot.edit_message_text(chat_id=update.message.chat_id, message_id=self.LastMessage_id, text=escape(self.mess + "\n\n\n🤖️ ChatGPT3.5\n\n" + result), parse_mode='MarkdownV2')
+            await context.bot.edit_message_text(chat_id=update.message.chat_id, message_id=self.LastMessage_id, text=escape(self.mess + "\n\n\n\n\n" + result), parse_mode='MarkdownV2')
             self.LastMessage_id = ''
             self.mess = ''
 
